@@ -1,8 +1,86 @@
 img{
-    width:100%;
+    max-width:100%;
     height:auto;
 }
 
 .questions{
     border:black;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* splitting in the middle*/
+
+
+/*good visualizations*/
+.good1{
+    display: flex;
+    align-items: center;
+}
+.good1 > div{
+    flex-basis: 50%;
+}
+.good2{
+    display: flex;
+    align-items: center;
+}
+.good2 > div{
+    flex-basis: 50%;
+}
+.good3{
+    display: flex;
+    align-items: center;
+}
+.good3 > div{
+    flex-basis: 50%;
+}
+
+/*bad visualizations */
+.bad1{
+    display: flex;
+    align-items: center;
+}
+.bad1 > div{
+    flex-basis: 50%;
+}
+
+.bad2{
+    display: flex;
+    align-items: center;
+}
+.bad2 > div{
+    flex-basis: 50%;
+}
+
+
+.bad3{
+    display: flex;
+    align-items: center;
+}
+.bad3 > div{
+    flex-basis: 50%;
+}
+
+.redesign1{
+    display:flex;
+    align-items:center;
+}
+.redesign1 > div{
+    flex-basis: 50%;
+}
+
+.redesign2{
+    display:flex;
+    align-items:center;
+}
+.redesign2 > div{
+    flex-basis: 50%;
+}
+
+.redesign3{
+    display:flex;
+    align-items:center;
+}
+.redesign3 > div{
+    flex-basis: 50%;
 }
