@@ -16,21 +16,58 @@ h3 {
     text-align: center;
 }
 
-#home {
-    background-color: gray;
+.dropdown {
+    display: inline-block;
     position: fixed;
-    bottom: 3px;
-    right: 3px;
+    bottom: 5px;
+    right: 5px;
     text-decoration: none;
     padding: .5%;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
     text-align: center;
 }
-#home a {
-    text-decoration: none;
+.dropbtn {
+    background-color: gray;
     color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: gray; */
+    padding: 1px;
+    border-radius: 5%;
+    bottom: 100%;
+    right: 5px;
+}
+.dropdown-content a {
+    font-size: 12px;
+    /* border-style: solid; */
+    border-width: 1px;
+    border-color: black;
+    border-radius: 50%;
+    height: fit-content;
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: gray;
+}
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    /* background-color: gray; */
+    transform: rotateX(180deg);
+    transition: all 0.5s ease-in-out;
 }
 
 .intro {
