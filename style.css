@@ -1,7 +1,103 @@
-img{
-    max-width:100%;
-    height:auto;
+body {
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    margin: 2%;
+    padding: 1%;
+    text-align: center;
+}
+
+#home {
+    background-color: gray;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    text-decoration: none;
+    padding: .5%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+#home a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 20px;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 17px;
+    width: 29%;
+    text-align: center;
+    background-color: gray;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-radius: 50%;
+  }
+
+hr.rounded {
+    border-top: 3px solid black;
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+}
+.wrapper div {
+    height: 1000px;
+    width: 96%;
+    padding: 1%;
+    overflow: auto;
+    background-color: lightgray;
+    margin: 1%;
+    text-align: center;
+}
+.pictures {
+    padding: 1%;
+    width: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .questions{
     border:black;
@@ -9,29 +105,13 @@ img{
     padding: 20px;
 }
 
-/* splitting in the middle*/
-
-
 /*good visualizations*/
-.good1{
+.box{
     display: flex;
     align-items: center;
+    /* height: 500px; */
 }
-.good1 > div{
-    flex-basis: 50%;
-}
-.good2{
-    display: flex;
-    align-items: center;
-}
-.good2 > div{
-    flex-basis: 50%;
-}
-.good3{
-    display: flex;
-    align-items: center;
-}
-.good3 > div{
+.box > div{
     flex-basis: 50%;
 }
 
