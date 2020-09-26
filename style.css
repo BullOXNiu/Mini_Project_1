@@ -21,6 +21,7 @@ h3 {
 }
 p {
     text-align: left;
+    line-height: 150%;
 }
 
 .dropdown {
@@ -33,33 +34,6 @@ p {
     border-radius: 50%;
     text-align: center;
 }
-
-
-.dropdown2 {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    padding: .5%;
-    border-radius: 50%;
-    text-align: center;
-}
-.dropdown2 p {
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-style: italic;
-    font-size: 17px;
-    width: 45%;
-    text-align: center;
-    background-color: gray;
-    margin: 1%;
-    border-radius: 50%;
-}
-.dropdown2:hover .dropdown-content {
-    display: block;
-}
-
 
 .dropbtn {
     background-color: gray;
@@ -123,7 +97,7 @@ p {
     text-decoration: none;
     font-style: italic;
     font-size: 17px;
-    width: 29%;
+    width: 28%;
     text-align: center;
     background-color: gray;
     margin: 1%;
@@ -136,7 +110,7 @@ p {
     text-decoration: none;
     font-style: italic;
     font-size: 17px;
-    width: 29%;
+    width: 28%;
     text-align: center;
     background-color: gray;
     margin: 1%;
@@ -160,11 +134,11 @@ hr.rounded {
 #triplets {
     grid-template-columns: 33.33% 33.33% 33.33%;
 }
-#singlewrap {
+/* #singlewrap {
     grid-template-columns: 100%;
-}
+} */
 .wrapper div {
-    height: 550px;
+    height: 75vh;
     width: 96%;
     padding: 1%;
     overflow: auto;
@@ -172,15 +146,55 @@ hr.rounded {
     margin: 1%;
     text-align: center;
 }
-#singlewrap .critique {
+/* #singlewrap .critique {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
     text-align: center;
     background-color: white;
     border-style: solid;
     border-color: darkgray;
     height: 250px;
-}
+} */
 .pictures {
     padding: 1%;
     width: 98%;
+}
+
+#critique {
+    height: 50px;
     overflow: hidden;
+}
+.dropdown2 {
+    /* position: relative; */
+    display: inline-block;
+}
+.dropdown2 p {
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.dropdown2 p:hover {
+    cursor: pointer;
+}
+.dropdown-content-left {
+    display: none;
+    position: absolute;
+}
+.dropdown2:hover .dropdown-content-left {
+    display: inline-block;
+    width: 40vw;
+    height: 30vw;
+    left: 50vw;
+}
+.dropdown-content-right {
+    display: none;
+    position: absolute;
+}
+.dropdown2:hover .dropdown-content-right {
+    display: inline-block;
+    width: 40vw;
+    height: 30vw;
+    left: 50vw;
 }
