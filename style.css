@@ -249,10 +249,11 @@ hr.rounded {
 }
 
 #vd {
-    margin: 2%;
-    width: 96%;
+    margin: 1%;
+    width: 98%;
 }
 
 video {
-    width: 100%;
+    padding: 1%;
+    width: 98%;
 }
