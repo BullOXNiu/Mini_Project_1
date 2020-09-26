@@ -247,3 +247,8 @@ hr.rounded {
     height: 30vw;
     left: 50vw;
 }
+
+video {
+    margin: 2%;
+    width: 96%;
+}
