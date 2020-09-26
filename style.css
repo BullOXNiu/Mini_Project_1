@@ -23,6 +23,9 @@ p {
     text-align: left;
     line-height: 150%;
 }
+a {
+    text-decoration: none;
+}
 
 .dropdown {
     display: inline-block;
@@ -42,6 +45,7 @@ p {
     width: 40px;
     border-radius: 50%;
     font-size: 40px;
+    transition: transform 1s ease-in-out;
 }
 .dropdown-content {
     display: none;
@@ -67,6 +71,44 @@ p {
     color: white;
     background-color: gray;
 }
+#eight {
+    font-style: italic;
+    border-radius: 0%;
+    background-color: black;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+}
+#eight-names {
+    display: none;
+    position: absolute;
+}
+#eight-names p {
+    font-size: 5vw;
+    position: fixed;
+    /* bottom: 5vh; */
+    left: 20vw;
+    right: 20vw;
+    top: 25vh;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    opacity: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#eight:hover {
+    cursor: no-drop;
+    transform: rotate(720deg);
+}
+#eight:hover + #eight-names {
+    font-size: 50px;
+    display: block;
+}
+
 .dropdown-content a:hover {
     background-color: black;
     color: white;
@@ -76,8 +118,7 @@ p {
 }
 .dropdown:hover .dropbtn {
     /* background-color: gray; */
-    transform: rotateX(180deg);
-    transition: all 0.5s ease-in-out;
+    transform: rotateX(540deg);
 }
 
 .intro {
@@ -168,6 +209,14 @@ hr.rounded {
 .dropdown2 {
     /* position: relative; */
     display: inline-block;
+}
+#link > p {
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    width: 50%;
+    color: white;
+    margin-left: 25%;
 }
 .dropdown2 p {
     background-color: black;
